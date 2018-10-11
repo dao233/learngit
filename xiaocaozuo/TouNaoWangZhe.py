@@ -45,10 +45,10 @@ def get_screenshot():
     #    f.write(new_img_fb.getvalue())
     return new_img_fb
 def get_word_by_image(img):
-    APPID = '11788835'
+    APPID = 'YourAPPID'
 
-    APIKey = 'tzZW1S0Ug3A5WhHCQP9RK9jT'
-    SecretKey = 'TS9BAF7dIp4F7yDbVTd0qMXCUS6EjEB4'
+    APIKey = 'YourAPIKey'
+    SecretKey = 'YourSecretKey'
     client = AipOcr(APPID, APIKey, SecretKey)
     res=client.basicGeneral(img)
     return res
